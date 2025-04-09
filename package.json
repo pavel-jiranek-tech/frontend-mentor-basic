@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "sass:build": "echo 'přidej konkrétní projekty např. npm run sass:qr && npm run sass:faq'",
-    "sass:watch": "npm-run-all --parallel sass:watch:*"
+    "sass:build": "node scripts/build-all.js",
+    "sass:watch": "npm-run-all --parallel sass:watch:*",
+    "init": "node scripts/init-project.js"
   },
   "repository": {
     "type": "git",
