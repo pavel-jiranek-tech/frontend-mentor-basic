@@ -6,6 +6,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: v.$font-family-outfit;
 }
 
 body {
@@ -16,19 +17,72 @@ body {
   min-height: 100vh;
 }
 
-.card {
+.qr-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: v.$spacing-300;
+  max-width: 320px;
+  box-sizing: border-box;
   background-color: white;
-  padding: 2rem;
-  border-radius: 1rem;
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  padding: v.$spacing-200 v.$spacing-200 v.$spacing-500 v.$spacing-200;
+  border-radius: 20px;
+  box-shadow: 0 25px 25px rgba(0, 0, 0, 0.0477);
+
+  &__image {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-color: v.$blue-600;
+    position: relative;
+    overflow: hidden;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      border-radius: 50%;
+      background-color: hsla(0, 0%, 100%, 0.2); // světlejší, dekorativní
+      z-index: 0;
+    }
+  
+    &::before {
+      width: 328px;
+      height: 328px;
+      top: -164px;  // půlka výšky
+      left: -131px;
+    }
+  
+    &::after {
+      width: 270px;
+      height: 270px;
+      bottom: -204px; // půlka výšky
+      right: -131px;
+    }
+
+    &-inner {
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: v.$spacing-200;
+    padding: 0 v.$spacing-200;
+    text-align: center;
+  }
 
   &__title {
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
+    @include m.text-preset-1;
   }
 
   &__description {
-    font-size: 0.95rem;
+    @include m.text-preset-2;
     color: v.$slate-500;
   }
 }

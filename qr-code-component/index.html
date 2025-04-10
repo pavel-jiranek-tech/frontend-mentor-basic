@@ -1,15 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Challenge Name</title>
-  <link rel="stylesheet" href="dist/style.css" />
+  <title>QR card component</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
 </head>
+
 <body>
-  <main class="card">
-    <h1 class="card__title">...</h1>
-    <p class="card__description">...</p>
-  </main>
+  <div class="qr-card">
+    <div class="qr-card__image">
+      <image src="./assets/images/qr-code.png" class="qr-card__image-inner" />
+    </div>
+    <div class="qr-card__text">
+      <div class="qr-card__title">
+        Improve your front-end skills by building projects
+      </div>
+      <div class="qr-card__description">
+        Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="/main.js"></script>
 </body>
+
 </html>
