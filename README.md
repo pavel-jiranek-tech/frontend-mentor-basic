@@ -1,13 +1,13 @@
 # 🧱 Frontend Mentor – Basic Challenges
 
-Tento repozitář obsahuje moje řešení základních HTML/CSS výzev z platformy [Frontend Mentor](https://www.frontendmentor.io/).  
-Každý projekt je umístěn ve své vlastní složce a je navržen jako **samostatná statická stránka** s vlastním SCSS a výstupem do `dist/`.
+This repository contains my solutions to basic HTML/CSS challenges from the [Frontend Mentor](https://www.frontendmentor.io/) platform.
+Each project is placed in its own folder and designed as a **standalone static page** with its own SCSS and output to `dist/`.
 
-Repozitář slouží jako **cvičný prostor**, ale zároveň i jako **modulární portfolio** – každý projekt může být snadno nasazen zvlášť např. přes Netlify.
+The repository serves as a **practice space**, but also as a **modular portfolio** – each project can be easily deployed individually, e.g., via Netlify.
 
 ---
 
-## 🔧 Struktura repozitáře
+## 🔧 Repository structure
 
 ```
 frontend-mentor-basic/
@@ -18,55 +18,55 @@ frontend-mentor-basic/
 │   ├── dist/
 │   │   ├── style.css
 │   │   └── style.css.map
-│   └── README.md (volitelně)
+│   └── README.md (optional)
 ├── ...
 ├── package.json
 └── scripts/
-    ├── init-project.js     # skript pro vytvoření nového projektu ze šablony
-    └── build-all.js        # sestaví všechny projekty najednou
+    ├── init-project.js     # script for creating a new project from template
+    └── build-all.js        # builds all projects at once
 ```
 
 ---
 
-## 🚀 Použité technologie
+## 🚀 Technologies used
 
 - **HTML5 + BEM**
-- **SCSS** – každý projekt má vlastní izolovaný SCSS
-- **Sass CLI** – centrální kompilace přes `package.json` skripty
-- **Node.js skripty** – pro vytváření a build projektů
-- (volitelně) **Netlify** – nasazení každého projektu samostatně
+- **SCSS** – each project has its own isolated SCSS
+- **Sass CLI** – central compilation via `package.json` scripts
+- **Node.js skripty** – for creating and building projects
+- (optional) **Netlify** – deploy each project individually
 
 ---
 
-## 📦 Práce s projektem
+## 📦 Working with the project
 
-### Instalace závislostí (pouze jednou v rootu):
+### Install dependencies (only onee in root)
 
 ```bash
 npm install
 ```
 
-### Vytvoření nového projektu:
+### Create a new project
 
 ```bash
 npm run init <nazev-projektu>
 ```
 
-Tím se vytvoří nová složka např. `faq-accordion`, naklonuje se šablona, smaže se `package.json` a aktualizuje se centrální `package.json` o nové `sass:` skripty.
+This creates a new folder, e.g., `faq-accordion`, clones the template, removes `package.json` inside, and updates the central `package.json` with new `sass:` scripts.
 
-### Build jednoho projektu:
+### Build a single project
 
 ```bash
 npm run sass:faq-accordion
 ```
 
-### Watch mód (během vývoje):
+### Watch mode (during development)
 
 ```bash
 npm run sass:watch:faq-accordion
 ```
 
-### Build všech projektů:
+### Build all projects
 
 ```bash
 npm run sass:build
@@ -74,45 +74,45 @@ npm run sass:build
 
 ---
 
-## 🌐 Nasazení na Netlify
+## 🌐 Deployment on Netlify
 
-Každý projekt může být nasazen samostatně – např. složka `faq-accordion/`.
+Each project can be deployed individually - e.g., the folder `faq-accordion/`.
 
-**Build command:** *(žádný – builduj lokálně)*  
+**Build command:** *(none - build locally)*  
 **Publish directory:** `faq-accordion`
 
-Nezapomeň, že `index.html` musí odkazovat na CSS ve složce `./dist/style.css`.
+Make sure that `index.html` links to the CSS file in `./dist/style.css`.
 
 ---
 
-## 📚 Projekty
+## 📚 Projects
 
-| Projekt             | Live demo               | Popis                     |
+| Project             | Live demo               | Decription                     |
 |---------------------|--------------------------|---------------------------|
-| `faq-accordion`     | *(odkaz sem později)*    | Interaktivní accordion    |
-| `qr-code-component` | *(odkaz sem později)*    | Základní centrální karta  |
+| `qr-code-component` | *(link to be added)*    | Basic centered card  |
+| `faq-accordion`     | *(link to be added)*    | Interactive accordion    |
 | ...                 | ...                      | ...                       |
 
 ---
 
-## 🧠 Cíle tohoto projektu
+## 🧠 Project goals
 
-- Naučit se a procvičit čistý HTML + SCSS + BEM přístup
-- Udržet **každý projekt nezávislý**, ale s centrálním buildem
-- Vytvořit čisté a snadno nasaditelné výstupy
-- Automatizovat tvorbu složek a kompilaci pomocí Node.js
-
----
-
-## 📌 Poznámky
-
-- Každý projekt má svou vlastní složku – nedochází ke sdílení SCSS mezi projekty.
-- Centrální `package.json` obsahuje všechny build/watch skripty.
-- Skripty jsou generovány automaticky pomocí `scripts/init-project.js`.
+- Revisiting and practice a clean HTML + SCSS + BEM approach
+- Keep **each project independent**, but with centralized build
+- Create clean and easily deployable outputs
+- Automate folder creation and compilation with Node.js
 
 ---
 
-## 🤝 Kontakt
+## 📌 Notes
 
-Pokud máš dotaz, připomínku nebo chceš spolupracovat, ozvi se!  
+- Each project has its own folder - no SCSS is shared between them.
+- The central `package.json` contains all build/watch scripts.
+- Scripts are generated automatically via `scripts/init-project.js`.
+
+---
+
+## 🤝 Contact
+
+If you have a question, feedback, or want to collaborate, feel free to reach out!
 > *http://...*
