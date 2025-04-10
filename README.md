@@ -11,7 +11,7 @@ The repository serves as a **practice space**, but also as a **modular portfolio
 
 ```
 frontend-mentor-basic/
-├── faq-accordion/
+├── qr-code-component/
 │   ├── index.html
 │   ├── scss/
 │   │   └── main.scss
@@ -54,32 +54,32 @@ npm run init <nazev-projektu>
 
 This creates a new folder, e.g., `faq-accordion`, clones the template, removes `package.json` inside, and updates the central `package.json` with new `sass:` scripts.
 
-### Build a single project
+### Run `qr` project in dev mode
 
 ```bash
-npm run sass:faq-accordion
+npm run dev:qr
 ```
 
-### Watch mode (during development)
+### Build `qr` project
 
 ```bash
-npm run sass:watch:faq-accordion
+npm run build:qr
 ```
 
-### Build all projects
+### Preview `qr` project
 
 ```bash
-npm run sass:build
+npm run preview:qr
 ```
 
 ---
 
 ## 🌐 Deployment on Netlify
 
-Each project can be deployed individually - e.g., the folder `faq-accordion/`.
+Each project can be deployed individually - e.g., the folder `qr-code-component/`.
 
 **Build command:** *(none - build locally)*  
-**Publish directory:** `faq-accordion`
+**Publish directory:** `qr-code-component`
 
 Make sure that `index.html` links to the CSS file in `./dist/style.css`.
 
@@ -89,9 +89,8 @@ Make sure that `index.html` links to the CSS file in `./dist/style.css`.
 
 | Project             | Live demo               | Decription                     |
 |---------------------|--------------------------|---------------------------|
-| `qr-code-component` | *(link to be added)*    | Basic centered card  |
-| `faq-accordion`     | *(link to be added)*    | Interactive accordion    |
-| ...                 | ...                      | ...                       |
+| [qr-code-component](https://github.com/pavel-jiranek-tech/frontend-mentor-basic/tree/main/qr-code-component) | [go to demo](https://pj-fm-qr.netlify.app/)    | Basic centered QR card  |
+| ... | ... | ... |
 
 ---
 
@@ -115,4 +114,7 @@ Make sure that `index.html` links to the CSS file in `./dist/style.css`.
 ## 🤝 Contact
 
 If you have a question, feedback, or want to collaborate, feel free to reach out!
-> *http://...*
+
+- LinkedIn - [pavel-jiranek-tech](https://www.linkedin.com/in/pavel-jiranek-tech/)
+- GitHub – [pavel-jiranek-tech](https://github.com/pavel-jiranek-tech)
+- Frontend Mentor – [@pavel-jiranek-tech](https://www.frontendmentor.io/profile/pavel-jiranek-tech)

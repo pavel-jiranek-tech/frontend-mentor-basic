@@ -1,63 +1,87 @@
 # Frontend Mentor – [QR code component]
 
-## Status: 🟡 **IN PROGRESS**
+![Status](https://img.shields.io/badge/status-🚀%20deployed-brightgreen)
 
 <details>
   <summary>Other status options</summary>
-- 🔴 *NOT STARTED*
-- 🟡 *IN PROGRESS*
-- 🧪 *TESTING*
-- 🚀 *DEPLOYED*
-- ♻️ *REFACTORING*
-- 🟢 *DONE*
+
+- ![Not started](https://img.shields.io/badge/status-🔴%20not%20started-red)
+- ![In progress](https://img.shields.io/badge/status-🟡%20in%20progress-yellow)
+- ![Testing](https://img.shields.io/badge/status-🧪%20testing-blue)
+- ![Deployed](https://img.shields.io/badge/status-🚀%20deployed-brightgreen)
+- ![Refactoring](https://img.shields.io/badge/status-♻️%20refactoring-lightgrey)
+- ![Done](https://img.shields.io/badge/status-🟢%20done-green)
+
 </details>
 <br />
 
-My solution for the [QR code component](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H) challenge from Frontend Mentor.
+This is my solution for the [QR code component](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H) challenge from Frontend Mentor.  
+The goal was to create a simple, centered QR code card component that closely matches the provided Figma design, using semantic HTML and modern SCSS practices.
 
 ![Screenshot](./screenshot.png)
 
+---
+
 ## 🔗 Live demo
 
-[View deployed version](https://my-demo.netlify.app)
+👉 [View deployed version](https://pj-fm-qr.netlify.app/)
+
+---
 
 ## 🛠 Technologies used
 
-- HTML5 + BEM
-- SCSS (compiled manually or via script)
-- Flexbox / CSS Grid
+- HTML5 + BEM naming convention
+- SCSS with `@use` and modular structure
+- Flexbox + aspect-ratio for layout and scaling
+- Decorative elements with `::before` / `::after`
+- Manual SCSS build (no framework)
 
-## 🚀 Project setup
+---
 
-1. **Install dependencies**
+## 📁 Project structure
 
-```bash
-npm install
-```
+<pre lang="md">
+qr-code-component/
+ ├── assets/
+ │ └── images/
+ ├── components/
+ │ └── qr-card.html
+ ├── scss/
+ │ ├── _base.scss
+ │ ├── _variables.scss
+ │ └── main.scss
+ ├── index.html
+ └── dist/
+ </pre>
 
-2. **Run development server (🧪Vite)**
+---
 
-```bash
-npm run dev
-```
+## ✨ What I focused on
 
-3. **Automatic SCSS compilation during development**
+- A deliberately minimalist project where I focused on a consistent HTML and SCSS structure
+- Using a modern SCSS approach with `@use`, variables and component modularity
+- Maintaining visual fidelity of the design in Figma, including subtle shadows and backgrounds with decorative circles
+- Working with `aspect-ratio` to maintain proper QR box ratio across devices
+- Consistent use of BEM naming and clean layout without relying on JS or CSS frameworks
 
-```bash
-npm run sass:watch
-```
+---
 
-4. **Build SCSS for production**
+## 🧠 Key implementation notes
 
-```bash
-npm run sass:build
-```
+- The design for desktop and mobile used an identical component - I decided not to use media queries because they were not needed
+- Box-shadow and spacings were exactly replicated according to Figma specifications, including opacity conversion (e.g. `4.77%` to `rgba`)
+- Decorative circles in the background were implemented via pseudo-elements with absolute positioning
+- The font "Outfit" was loaded via Google Fonts and plugged in as a SCSS variable for possible scalability in other components
 
-5. **Open the project**
+---
 
-- Vite usually starts the dev server automatically (typically at `http://localhost:5173`)
-- Or open `index.html` manually in your browser
+## ✍️ Author
 
-## 📚 Notes
+- GitHub – [pavel-jiranek-tech](https://github.com/pavel-jiranek-tech)
+- Frontend Mentor – [@pavel-jiranek-tech](https://www.frontendmentor.io/profile/pavel-jiranek-tech)
 
-Short notes about what you tried, what was interesting or new.
+---
+
+## 📝 License
+
+This project is part of a challenge on Frontend Mentor and is intended for educational and portfolio purposes only.
