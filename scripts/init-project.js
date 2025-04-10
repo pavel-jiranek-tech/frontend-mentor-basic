@@ -45,21 +45,18 @@ const existingPrefixes = Object.keys(scripts)
 
 const uniquePrefix = generateUniquePrefix(basePrefix, existingPrefixes);
 
-const sassBuildKey = `sass:${uniquePrefix}`;
-const sassWatchKey = `sass:watch:${uniquePrefix}`;
 const devKey = `dev:${uniquePrefix}`;
-const devFullKey = `dev:${uniquePrefix}:full`;
-const sassBuildCmd = `sass ${projectName}/scss/main.scss ${projectName}/dist/style.css`;
-const sassWatchCmd = `sass --watch ${projectName}/scss/main.scss ${projectName}/dist/style.css`;
 const devCmd = `PROJECT=${projectName} vite`;
-const devFullCmd = `npm-run-all --parallel dev:${uniquePrefix} sass:watch:${uniquePrefix}`;
+const buildKey = `build:${uniquePrefix}`;
+const buildCmd = `PROJECT=${projectName} vite build`;
+const previewKey = `preview:${uniquePrefix}`;
+const previewCmd = `PROJECT=${projectName} vite preview`;
 
 packageData.scripts = {
   ...packageData.scripts,
-  [sassBuildKey]: sassBuildCmd,
-  [sassWatchKey]: sassWatchCmd,
   [devKey]: devCmd,
-  [devFullKey]: devFullCmd
+  [buildKey]: buildCmd,
+  [previewKey]: previewCmd
 };
 
 // 4. Write back
