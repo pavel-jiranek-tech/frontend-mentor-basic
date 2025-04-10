@@ -5,6 +5,7 @@
 <details>
   <summary>Other status options</summary>
 - 🔴 *NOT STARTED*
+- 🟡 *IN PROGRESS*
 - 🧪 *TESTING*
 - 🚀 *DEPLOYED*
 - ♻️ *REFACTORING*

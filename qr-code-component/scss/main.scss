@@ -10,8 +10,8 @@
 
 body {
   font-family: 'Outfit', sans-serif;
-  background-color: v.$light-gray;
-  color: v.$dark-blue;
+  background-color: v.$slate-300;
+  color: v.$slate-900;
   @include m.flex-center;
   min-height: 100vh;
 }
@@ -29,6 +29,6 @@ body {
 
   &__description {
     font-size: 0.95rem;
-    color: v.$grayish-blue;
+    color: v.$slate-500;
   }
 }
