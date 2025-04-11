@@ -1,6 +1,6 @@
 # Frontend Mentor – [Product Preview Card Component]
 
-![In progress](https://img.shields.io/badge/status-🟡%20in%20progress-yellow)
+![Deployed](https://img.shields.io/badge/status-🚀%20deployed-brightgreen)
 
 <details>
   <summary>Other status options</summary>
@@ -28,11 +28,12 @@ This is my solution for the [Product Preview Card Component](https://www.fronten
 
 ## 🛠 Technologies used
 
-- HTML5 + BEM naming convention
-- SCSS with `@use` and modular structure
-- Flexbox + aspect-ratio for layout and scaling
-- Decorative elements with `::before` / `::after`
-- Manual SCSS build (no framework)
+- HTML5 + BEM naming convention  
+- SCSS with `@use`, `@forward`, and modular architecture (`variables/`, `mixins/`)  
+- Flexbox layout (mobile-first) with media queries and spacing via SCSS variables  
+- Responsive images using `<picture>` with device-specific sources  
+- Accessible markup (semantic tags, proper `alt`, `aria-hidden`, keyboard focus styles)  
+- Manual SCSS build with Vite (no UI framework or CSS utility library)  
 
 ---
 
@@ -49,21 +50,22 @@ This is my solution for the [Product Preview Card Component](https://www.fronten
 
 ## ✨ What I focused on
 
-- A deliberately minimalist project where I focused on a consistent HTML and SCSS structure
-- Using a modern SCSS approach with `@use`, variables and component modularity
-- Maintaining visual fidelity of the design in Figma, including subtle shadows and backgrounds with decorative circles
-- Working with `aspect-ratio` to maintain proper QR box ratio across devices
-- Consistent use of BEM naming and clean layout without relying on JS or CSS frameworks
+- Clean, minimalist solution with a consistent HTML and SCSS structure  
+- Using a modern SCSS architecture (`@use`, `@forward`, modular `variables/`, `mixins/`)  
+- Pixel-perfect match to the Figma design, including precise spacing, typography, and visual hierarchy  
+- Responsive behavior using `<picture>` and `object-fit` to match image scaling across devices  
+- Semantic markup with accessible elements (e.g. proper alt text, keyboard-friendly buttons)  
+- Fully mobile-first layout with BEM naming and no JS or external frameworks  
 
 ---
 
 ## 🧠 Key implementation notes
 
-- The design for desktop and mobile used an identical component - I decided not to use media queries because they were not needed
-- Box-shadow and spacings were exactly replicated according to Figma specifications, including opacity conversion (e.g. `4.77%` to `rgba`)
-- Decorative circles in the background were implemented via pseudo-elements with absolute positioning
-- The font "Outfit" was loaded via Google Fonts and plugged in as a SCSS variable for possible scalability in other components
-- Paying attention to accessibility through semantic HTML (e.g., `h1`, `p`, `img` with `alt`) and proper document language declaration
+- The desktop and mobile designs share a single responsive component with layout adjustments via media queries (`min-width: 768px`)  
+- Layout and spacing values match the Figma design exactly, including color and opacity conversions (e.g. hex to `hsla()` for consistent theming)  
+- The product image switches based on viewport using the `<picture>` element with device-specific sources  
+- Font families (`Fraunces` and `Montserrat`) are loaded via Google Fonts and mapped to SCSS variables for clarity and reuse  
+- Focused on accessibility: semantic HTML (`main`, `h1`, `button`, `img` with descriptive `alt`), `aria-hidden` for decorative icons, and `:focus-visible` styling for keyboard users  
 
 ---
 

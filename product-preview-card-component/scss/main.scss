@@ -13,9 +13,16 @@ body {
   color: v.$black;
   @include m.flex-center;
   min-height: 100vh;
+  padding: v.$spacing-200;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .pp-card {
+  width: 100%;
+  max-width: 350px;
+  margin-inline: auto;
   display: flex;
   flex-direction: column;
   background-color: v.$white;
@@ -23,18 +30,26 @@ body {
   overflow: hidden;
 
   &__image {
+    flex: 1 1 50%;
+
     img {
       display: block;
       width: 100%;
-      height: auto;
+      height: 100%;
+      object-fit: cover;
     }
   }
 
   &__content {
-    padding: v.$spacing-400;
-    display: flex;
-    flex-direction: column;
-    gap: v.$spacing-400;
+    flex: 1 1 50%;
+    padding: 0;
+
+    &-inner {
+      padding: v.$spacing-400;
+      display: flex;
+      flex-direction: column;
+      gap: v.$spacing-300;
+    }
   }
 
   &__category {
@@ -85,52 +100,24 @@ body {
     &:focus {
       background-color: v.$green-700;
     }
-
-    img {
-      width: 1rem;
-      height: 1rem;
+    &:focus-visible {
+      outline: 2px solid v.$green-700;
+      outline-offset: 2px;
     }
   }
 }
 
-@media (min-width: 376px) {
+@media (min-width: v.$breakpoint-tablet) {
+  body {
+    padding: v.$spacing-500;
+  }
+
   .pp-card {
     flex-direction: row;
     max-width: 600px;
-    margin: 0 auto;
-    align-items: stretch;
 
-    &__image {
-      flex: 1 1 50%;
-
-      picture,
-      img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
+    &__content-inner {
+      gap: v.$spacing-400;
     }
-
-    &__content {
-      flex: 1 1 50%;
-    }
-  }
-}
-
-.card {
-  background-color: white;
-  padding: 2rem;
-  border-radius: 1rem;
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-
-  &__title {
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
-  }
-
-  &__description {
-    font-size: 0.95rem;
-    color: v.$green-500;
   }
 }
