@@ -1,7 +1,7 @@
 const { execSync } = require("child_process");
 const fs = require("fs");
 const path = require("path");
-const { createPrefix, generateUniquePrefix } = require('./utils');
+const { createPrefix, generateUniquePrefix, updateReadmeFile } = require('./utils');
 
 const args = process.argv.slice(2);
 const projectName = args[0];
@@ -64,3 +64,9 @@ fs.writeFileSync(packageJsonPath, JSON.stringify(packageData, null, 2));
 
 console.log(`✅ The project '${projectName}' has been created.`);
 console.log(`🛠 Scripts added to the main package.json.`);
+
+// 5. Update README.md
+
+updateReadmeFile(fs, path, projectName);
+
+console.log('🧼 Removed temporary project-template.md');
