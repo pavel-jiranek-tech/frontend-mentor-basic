@@ -18,7 +18,7 @@
 This is my solution for the [QR code component](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H) challenge from Frontend Mentor.  
 The goal was to create a simple, centered QR code card component that closely matches the provided Figma design, using semantic HTML and modern SCSS practices.
 
-![Screenshot](./screenshot.png)
+![Screenshot](./assets/images/screenshot.png)
 
 ---
 
@@ -40,19 +40,12 @@ The goal was to create a simple, centered QR code card component that closely ma
 
 ## 📁 Project structure
 
-<pre lang="md">
-qr-code-component/
- ├── assets/
- │ └── images/
- ├── components/
- │ └── qr-card.html
- ├── scss/
- │ ├── _base.scss
- │ ├── _variables.scss
- │ └── main.scss
- ├── index.html
- └── dist/
- </pre>
+- **`assets/`** - static files, e.g. images or favicons
+- **`assets/images/`** - images used in the component (QR code)
+- **`scss/`** - modules with global styles, variables, mixins
+- **`index.html`** - HTML structure of the component with BEM classes
+- **`main.js`** - entry point for loading styles (via SCSS)
+- **`dist/`** - folder for built output (ignored in Git)
 
 ---
 

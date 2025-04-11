@@ -7,24 +7,25 @@ The repository serves as a **practice space**, but also as a **modular portfolio
 
 ---
 
-## 🔧 Repository structure
+## 📚 Projects
 
-```
-frontend-mentor-basic/
-├── qr-code-component/
-│   ├── index.html
-│   ├── scss/
-│   │   └── main.scss
-│   ├── dist/
-│   │   ├── style.css
-│   │   └── style.css.map
-│   └── README.md (optional)
-├── ...
-├── package.json
-└── scripts/
-    ├── init-project.js     # script for creating a new project from template
-    └── build-all.js        # builds all projects at once
-```
+### [1] QR Code Component
+![Status](https://img.shields.io/badge/status-🚀%20deployed-brightgreen)  
+
+**🔗 Live:** [pj-fm-qr.netlify.app](https://pj-fm-qr.netlify.app/)  
+**📁 Repo:** [`qr-code-component`](https://github.com/pavel-jiranek-tech/frontend-mentor-basic/tree/main/qr-code-component)  
+**📝 Summary:**  
+A minimal, centered QR card built with semantic HTML and modular SCSS.  
+Focused on pixel-perfect reproduction from Figma and accessible markup (with `h1`, `p`, and `alt` text).  
+
+**🔧 Tech stack:**  
+![HTML5](https://img.shields.io/badge/HTML5-%23E34F26.svg?&logo=html5&logoColor=white)
+![SCSS](https://img.shields.io/badge/SCSS-%23CD6799.svg?&logo=sass&logoColor=white)
+![BEM](https://img.shields.io/badge/BEM-blue)
+![a11y](https://img.shields.io/badge/Accessibility_AA-5cb85c)
+![No Framework](https://img.shields.io/badge/No_Framework-lightgrey)
+![Figma](https://img.shields.io/badge/Figma_Design-FF7262?logo=figma&logoColor=white)
+![Netlify](https://img.shields.io/badge/Netlify-00C7B7?logo=netlify&logoColor=white)
 
 ---
 
@@ -32,7 +33,7 @@ frontend-mentor-basic/
 
 - **HTML5 + BEM**
 - **SCSS** – each project has its own isolated SCSS
-- **Sass CLI** – central compilation via `package.json` scripts
+- **Vite** – central compilation via `package.json` scripts
 - **Node.js skripty** – for creating and building projects
 - (optional) **Netlify** – deploy each project individually
 
@@ -40,7 +41,7 @@ frontend-mentor-basic/
 
 ## 📦 Working with the project
 
-### Install dependencies (only onee in root)
+### Install dependencies (only once in the root)
 
 ```bash
 npm install
@@ -82,15 +83,6 @@ Each project can be deployed individually - e.g., the folder `qr-code-component/
 **Publish directory:** `qr-code-component`
 
 Make sure that `index.html` links to the CSS file in `./dist/style.css`.
-
----
-
-## 📚 Projects
-
-| Project             | Live demo               | Decription                     |
-|---------------------|--------------------------|---------------------------|
-| [qr-code-component](https://github.com/pavel-jiranek-tech/frontend-mentor-basic/tree/main/qr-code-component) | [go to demo](https://pj-fm-qr.netlify.app/)    | Basic centered QR card  |
-| ... | ... | ... |
 
 ---
 
