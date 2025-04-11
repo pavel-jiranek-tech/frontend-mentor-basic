@@ -22,7 +22,7 @@ This is my solution for the [Product Preview Card Component](https://www.fronten
 
 ## 🔗 Live demo
 
-👉 [View deployed version](https://my-demo.netlify.app)
+👉 [View deployed version](https://pj-fm-ppc.netlify.app/)
 
 ---
 
