@@ -10,7 +10,7 @@
 }
 
 body {
-  font-family: 'Outfit', sans-serif;
+  font-family: v.$font-family-outfit;
   background-color: v.$slate-300;
   color: v.$slate-900;
   @include m.flex-center;
@@ -24,10 +24,10 @@ body {
   gap: v.$spacing-300;
   max-width: 320px;
   box-sizing: border-box;
-  background-color: white;
+  background-color: v.$white;
   padding: v.$spacing-200 v.$spacing-200 v.$spacing-500 v.$spacing-200;
   border-radius: 20px;
-  box-shadow: 0 25px 25px rgba(0, 0, 0, 0.0477);
+  box-shadow: 0 25px 25px v.$shadow;
 
   &__image {
     width: 100%;
@@ -42,20 +42,20 @@ body {
 
     &::before,
     &::after {
-      content: "";
+      content: '';
       position: absolute;
       border-radius: 50%;
-      background-color: hsla(0, 0%, 100%, 0.2); // světlejší, dekorativní
+      background-color: v.$blue-500; // světlejší, dekorativní
       z-index: 0;
     }
-  
+
     &::before {
       width: 328px;
       height: 328px;
-      top: -164px;  // půlka výšky
+      top: -164px; // půlka výšky
       left: -131px;
     }
-  
+
     &::after {
       width: 270px;
       height: 270px;

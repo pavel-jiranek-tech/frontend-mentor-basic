@@ -72,6 +72,7 @@ qr-code-component/
 - Box-shadow and spacings were exactly replicated according to Figma specifications, including opacity conversion (e.g. `4.77%` to `rgba`)
 - Decorative circles in the background were implemented via pseudo-elements with absolute positioning
 - The font "Outfit" was loaded via Google Fonts and plugged in as a SCSS variable for possible scalability in other components
+- Paying attention to accessibility through semantic HTML (e.g., `h1`, `p`, `img` with `alt`) and proper document language declaration
 
 ---
 
