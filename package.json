@@ -7,7 +7,10 @@
     "init": "node scripts/init-project.js",
     "dev:qr": "PROJECT=qr-code-component vite",
     "build:qr": "PROJECT=qr-code-component vite build",
-    "preview:qr": "PROJECT=qr-code-component vite preview"
+    "preview:qr": "PROJECT=qr-code-component vite preview",
+    "dev:ppc": "PROJECT=product-preview-card-component vite",
+    "build:ppc": "PROJECT=product-preview-card-component vite build",
+    "preview:ppc": "PROJECT=product-preview-card-component vite preview"
   },
   "repository": {
     "type": "git",

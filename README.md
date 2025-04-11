@@ -9,6 +9,44 @@ The repository serves as a **practice space**, but also as a **modular portfolio
 
 ## 📚 Projects
 
+### [2] Product Preview Card Component
+<!-- ![Not started](https://img.shields.io/badge/status-🔴%20not%20started-red)-->  
+![In progress](https://img.shields.io/badge/status-🟡%20in%20progress-yellow)  
+<!-- ![Testing](https://img.shields.io/badge/status-🧪%20testing-blue)  
+![Deployed](https://img.shields.io/badge/status-🚀%20deployed-brightgreen)  
+![Refactoring](https://img.shields.io/badge/status-♻️%20refactoring-lightgrey)  
+![Done](https://img.shields.io/badge/status-🟢%20done-green)-->  
+
+**🔗 Live:** [Demo Link](url)  
+**📁 Repo:** [`product-preview-card-component`]([url](https://github.com/pavel-jiranek-tech/frontend-mentor-basic/tree/main/product-preview-card-component))  
+**📝 Summary:**  
+Lorem ipsum...  
+
+**🔧 Tech stack:**  
+![HTML5](https://img.shields.io/badge/HTML5-%23E34F26.svg?&logo=html5&logoColor=white)
+![SCSS](https://img.shields.io/badge/SCSS-%23CD6799.svg?&logo=sass&logoColor=white)
+![BEM](https://img.shields.io/badge/BEM-blue)
+![Responsive](https://img.shields.io/badge/Responsive_Design-2196f3)
+![a11y](https://img.shields.io/badge/Accessibility_AA-5cb85c)
+![No Framework](https://img.shields.io/badge/No_Framework-lightgrey)
+![Figma](https://img.shields.io/badge/Figma_Design-FF7262?logo=figma&logoColor=white)
+![Netlify](https://img.shields.io/badge/Netlify-00C7B7?logo=netlify&logoColor=white)
+<!--Technologies  
+
+![JavaScript](https://img.shields.io/badge/JavaScript-%23F7DF1E.svg?&logo=javascript&logoColor=black)
+![Vue.js](https://img.shields.io/badge/Vue.js-%2335495e.svg?&logo=vue.js&logoColor=%234FC08D)
+![Nuxt.js](https://img.shields.io/badge/Nuxt.js-00C58E?logo=nuxt&logoColor=white)
+
+Methodologies  
+
+Tools  
+
+Deployment  
+![Vercel](https://img.shields.io/badge/Vercel-444444?logo=vercel&logoColor=white)-->
+
+---
+
+
 ### [1] QR Code Component
 ![Status](https://img.shields.io/badge/status-🚀%20deployed-brightgreen)  
 

@@ -1,0 +1,136 @@
+@use './variables/index' as v;
+@use './mixins/index' as m;
+
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: v.$cream;
+  color: v.$black;
+  @include m.flex-center;
+  min-height: 100vh;
+}
+
+.pp-card {
+  display: flex;
+  flex-direction: column;
+  background-color: v.$white;
+  border-radius: v.$spacing-100;
+  overflow: hidden;
+
+  &__image {
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__content {
+    padding: v.$spacing-400;
+    display: flex;
+    flex-direction: column;
+    gap: v.$spacing-400;
+  }
+
+  &__category {
+    @include m.text-preset-4;
+    text-transform: uppercase;
+    color: v.$grey;
+  }
+
+  &__title {
+    @include m.text-preset-1;
+    color: v.$black;
+  }
+
+  &__description {
+    @include m.text-preset-3;
+    color: v.$grey;
+  }
+
+  &__price-group {
+    display: flex;
+    align-items: center;
+    gap: v.$spacing-200;
+  }
+
+  &__price {
+    @include m.text-preset-1;
+    color: v.$green-500;
+  }
+
+  &__price--original {
+    @include m.text-preset-5;
+    color: v.$grey;
+  }
+
+  &__button {
+    @include m.flex-center;
+    gap: v.$spacing-100;
+    background-color: v.$green-500;
+    color: v.$white;
+    border: none;
+    border-radius: v.$spacing-100;
+    padding: v.$spacing-200 v.$spacing-400;
+    @include m.text-preset-2;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+
+    &:hover,
+    &:focus {
+      background-color: v.$green-700;
+    }
+
+    img {
+      width: 1rem;
+      height: 1rem;
+    }
+  }
+}
+
+@media (min-width: 376px) {
+  .pp-card {
+    flex-direction: row;
+    max-width: 600px;
+    margin: 0 auto;
+    align-items: stretch;
+
+    &__image {
+      flex: 1 1 50%;
+
+      picture,
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &__content {
+      flex: 1 1 50%;
+    }
+  }
+}
+
+.card {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+
+  &__title {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+
+  &__description {
+    font-size: 0.95rem;
+    color: v.$green-500;
+  }
+}
