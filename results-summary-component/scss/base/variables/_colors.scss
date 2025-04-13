@@ -1,0 +1,40 @@
+/* Neutral */
+$white: hsl(0, 0%, 100%);
+$very-light-blue: hsl(221, 100%, 96%); //Pale blue #ECF2FF
+$light-blue: hsl(241, 100%, 89%); //Light lavender #CAC9FF
+$dark-navy: hsl(224, 30%, 27%); //Dark gray blue #303B59
+
+/* Other */
+$red: hsl(0, 100%, 67%); //Light red #FF5555
+$yellow: hsl(39, 100%, 56%); //Orangey yellow #FFB21E
+$green: hsl(166, 100%, 37%); //Green teal #00BB8F
+$blue: hsl(234, 85%, 45%); //Cobalt blue #1125D6
+
+/* Gradients */
+$gradient-primary: linear-gradient(
+  to bottom,
+  hsl(252, 100%, 67%) 0%,
+  hsl(252, 100%, 63%) 0%,
+  hsl(241, 81%, 54%) 100%
+);
+
+$gradient-circle: linear-gradient(
+  to bottom,
+  hsl(256, 72%, 46%, 1) 0%,
+  hsl(241, 72%, 46%, 0) 100%
+);
+
+/* Shadows */
+$neutral-dark: hsl(0%, 0%, 59%, 1);
+
+//$light-slate-blue: hsl(252, 100%, 67%);
+// hsl(252, 100%, 63%)
+//$light-royal-blue: hsl(241, 81%, 54%);
+
+//$violet-blue-circle: hsl(256, 72%, 46%, 100%);
+//$persian-blue-circle: hsl(241, 72%, 46%, 0%);
+
+
+// light-slate-blue 0% (7755FF) -> 0% (6943FF) -> 100% light-royal-blue (2F2CE9)
+
+// $violet-blue-circle 0% -> 100% $persian-blue-circle -> 100% $persian-blue-circle

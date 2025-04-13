@@ -1,0 +1,23 @@
+@use '../base/variables/' as v;
+@use '../base/mixins/' as m;
+
+.result-card {
+  background-color: v.$white;
+  border-radius:1.5rem;
+  box-shadow: 0 2rem 3rem rgba(v.$neutral-dark, 0.1);
+  overflow: hidden;
+  //max-width: 736px;
+  margin: 2rem auto;
+  @include m.text-body;
+
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: v.$breakpoint-tablet) {
+  .result-card {
+    flex-direction: row;
+    max-width: 46rem; //736px
+
+  }
+}

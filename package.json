@@ -10,7 +10,10 @@
     "preview:qr": "PROJECT=qr-code-component vite preview",
     "dev:ppc": "PROJECT=product-preview-card-component vite",
     "build:ppc": "PROJECT=product-preview-card-component vite build",
-    "preview:ppc": "PROJECT=product-preview-card-component vite preview"
+    "preview:ppc": "PROJECT=product-preview-card-component vite preview",
+    "dev:rsc": "PROJECT=results-summary-component vite",
+    "build:rsc": "PROJECT=results-summary-component vite build",
+    "preview:rsc": "PROJECT=results-summary-component vite preview"
   },
   "repository": {
     "type": "git",

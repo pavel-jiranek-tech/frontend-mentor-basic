@@ -1,0 +1,18 @@
+@use './base/variables/index' as v;
+@use './base/mixins/index' as m;
+@use './components/result-card' as res;
+@use './components/category-item' as cat;
+
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  @include m.text-body;
+  @include m.flex-center;
+  min-height: 100vh;
+  background-color: v.$very-light-blue;
+}

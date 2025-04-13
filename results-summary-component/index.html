@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Challenge Name</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
+</head>
+
+<body>
+  <main class="result-card">
+    <section class="result-card__score">
+      <h2 class="result-card__title">Your Result</h2>
+      <div class="result-card__circle">
+        <p class="result-card__score-value">76</p>
+        <p class="result-card__score-max">of 100</p>
+      </div>
+      <h3 class="result-card__grade">Great</h3>
+      <p class="result-card__description">You scored higher than 65% of the people who have taken these tests.</p>
+    </section>
+
+    <section class="result-card__summary">
+      <h2 class="result-card__summary-title">Summary</h2>
+      <ul class="result-card__categories">
+        <li class="category-item category-item--reaction">
+          <img src="./assets/icons/icon-reaction.svg" aria-hidden="true" alt="Reaction icon" class="category-item__icon" />
+          <span class="category-item__name">Reaction</span>
+          <span class="category-item__score"><strong>80</strong> / 100</span>
+        </li>
+        <li class="category-item category-item--memory">
+          <img src="./assets/icons/icon-memory.svg" aria-hidden="true" alt="Memory icon" class="category-item__icon" />
+          <span class="category-item__name">Memory</span>
+          <span class="category-item__score"><strong>92</strong> / 100</span>
+        </li>
+        <li class="category-item category-item--verbal">
+          <img src="./assets/icons/icon-verbal.svg" aria-hidden="true" alt="Verbal comprehension icon" class="category-item__icon" />
+          <span class="category-item__name">Verbal</span>
+          <span class="category-item__score"><strong>61</strong> / 100</span>
+        </li>
+        <li class="category-item category-item--visual">
+          <img src="./assets/icons/icon-visual.svg" aria-hidden="true" alt="Visual comprehension icon" class="category-item__icon" />
+          <span class="category-item__name">Visual</span>
+          <span class="category-item__score"><strong>73</strong> / 100</span>
+        </li>
+      </ul>
+      <button class="result-card__btn">Continue</button>
+    </section>
+  </main>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
