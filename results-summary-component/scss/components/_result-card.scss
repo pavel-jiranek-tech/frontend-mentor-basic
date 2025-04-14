@@ -122,6 +122,7 @@
       border-radius: 32px;
 
       &-title {
+        margin-bottom: 35px;
         @include m.text-heading-m-desktop;
       }
     }
@@ -131,6 +132,7 @@
       padding: 38px 40px 46px 40px;
 
       &-title {
+        margin-bottom: 28px;
         @include m.text-heading-m-desktop;
       }
     }
@@ -148,12 +150,17 @@
     }
 
     &__grade {
+      margin-bottom: 14px;
       @include m.text-heading-l-desktop;
     }
 
     &__description {
       max-width: 260px;
       @include m.text-body-desktop;
+    }
+
+    &__categories {
+      margin-bottom: 41px;
     }
   }
 }
