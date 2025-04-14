@@ -123,7 +123,6 @@
 
       &-title {
         margin-bottom: 35px;
-        @include m.text-heading-m-desktop;
       }
     }
 
@@ -133,7 +132,6 @@
 
       &-title {
         margin-bottom: 28px;
-        @include m.text-heading-m-desktop;
       }
     }
 
@@ -141,31 +139,18 @@
       width: 200px;
       height: 200px;
       margin-bottom: 28px;
-
-      &-value {
-        @include m.text-heading-xl-desktop;
-      }
-      &-max {
-        @include m.text-body-bold-desktop;
-      }
     }
 
     &__grade {
       margin-bottom: 14px;
-      @include m.text-heading-l-desktop;
     }
 
     &__description {
       max-width: 260px;
-      @include m.text-body-desktop;
     }
 
     &__categories {
       margin-bottom: 41px;
-    }
-
-    &__btn {
-      @include m.text-body-bold-desktop;
     }
   }
 }
