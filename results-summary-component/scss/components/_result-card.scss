@@ -2,22 +2,158 @@
 @use '../base/mixins/' as m;
 
 .result-card {
-  background-color: v.$white;
-  border-radius:1.5rem;
-  box-shadow: 0 2rem 3rem rgba(v.$neutral-dark, 0.1);
-  overflow: hidden;
-  //max-width: 736px;
-  margin: 2rem auto;
-  @include m.text-body;
-
   display: flex;
   flex-direction: column;
+  width: 100%;
+  min-height: 100vh;
+  margin: 0 auto;
+
+  background-color: v.$white;
+  overflow: hidden;
+  @include m.neutral-box-shadow;
+  @include m.text-body;
+
+  &__score {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 24px 58px 40px 58px;
+
+    background: v.$gradient-primary;
+    color: v.$white;
+    text-align: center;
+
+    border-radius: 0 0 32px 32px;
+
+    &-title {
+      margin-bottom: 24px;
+      color: v.$light-blue;
+      @include m.text-body-bold;
+    }
+  }
+
+  &__circle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 140px;
+    height: 140px;
+    margin: 0 auto 24px;
+    border-radius: 50%;
+    background: v.$gradient-circle;
+
+    & p {
+      margin: 0;
+    }
+
+    &-value {
+      @include m.text-heading-xl;
+    }
+
+    &-max {
+      color: m.hsla-from-hsl(v.$light-blue, 0.5168);
+      @include m.text-body-bold;
+    }
+  }
+
+  &__grade {
+    margin-bottom: 8px;
+    @include m.text-heading-l;
+  }
+
+  &__description {
+    color: v.$light-blue;
+    @include m.text-body;
+  }
+
+  &__summary {
+    padding: 24px 30px 30px 30px;
+    background-color: v.$white;
+
+    &-title {
+      margin-bottom: 24px;
+      color: v.$dark-navy;
+      @include m.text-heading-m;
+    }
+  }
+
+  &__categories {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 24px;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__btn {
+    width: 100%;
+    padding: 17px 16px 16px 16px;
+    border: none;
+    border-radius: 128px;
+    cursor: pointer;
+
+    background-color: v.$dark-navy;
+    color: v.$white;
+    @include m.text-body-bold;
+
+    &:hover {
+      background: v.$gradient-primary;
+    }
+  }
 }
 
 @media (min-width: v.$breakpoint-tablet) {
   .result-card {
     flex-direction: row;
-    max-width: 46rem; //736px
+    max-width: 736px;
+    min-height: auto;
+    margin: 32px auto;
+    border-radius: 32px;
 
+    &__score {
+      align-items: center;
+      flex: 0 0 368px;
+      padding-top: 38px;
+      padding-bottom: 46px;
+
+      border-radius: 32px;
+
+      &-title {
+        @include m.text-heading-m-desktop;
+      }
+    }
+
+    &__summary {
+      flex: 1;
+      padding: 38px 40px 46px 40px;
+
+      &-title {
+        @include m.text-heading-m-desktop;
+      }
+    }
+
+    &__circle {
+      width: 200px;
+      height: 200px;
+
+      &-value {
+        @include m.text-heading-xl-desktop;
+      }
+      &-max {
+        @include m.text-body-bold-desktop;
+      }
+    }
+
+    &__grade {
+      @include m.text-heading-l-desktop;
+    }
+
+    &__description {
+      max-width: 260px;
+      @include m.text-body-desktop;
+    }
   }
 }

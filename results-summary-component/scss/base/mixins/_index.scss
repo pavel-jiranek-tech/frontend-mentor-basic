@@ -1,2 +1,11 @@
 @forward 'typography';
 @forward 'flex';
+@use '../variables/colors' as c;
+
+@function hsla-from-hsl($hsl-color, $alpha) {
+  @return hsla(hue($hsl-color), saturation($hsl-color), lightness($hsl-color), $alpha);
+}
+
+@mixin neutral-box-shadow {
+  box-shadow: 0px 30px 60px c.$neutral-dark;
+}
