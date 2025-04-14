@@ -13,8 +13,8 @@
 }
 
 body {
-  @include m.text-body;
-  @include m.flex-center;
   min-height: 100vh;
   background-color: v.$very-light-blue;
+  @include m.flex-center;
+  @include m.text-body;
 }
