@@ -9,40 +9,26 @@ The repository serves as a **practice space**, but also as a **modular portfolio
 
 ## 📚 Projects
 
-### [X] results-summary-component
-![Not started](https://img.shields.io/badge/status-🔴%20not%20started-red)  
-![In progress](https://img.shields.io/badge/status-🟡%20in%20progress-yellow)  
-![Testing](https://img.shields.io/badge/status-🧪%20testing-blue)  
+### [3] Results Summary Component
 ![Deployed](https://img.shields.io/badge/status-🚀%20deployed-brightgreen)  
-![Refactoring](https://img.shields.io/badge/status-♻️%20refactoring-lightgrey)  
-![Done](https://img.shields.io/badge/status-🟢%20done-green)  
 
-**🔗 Live:** [Demo Link](url)  
+**🔗 Live:** [pj-fm-ppc.netlify.app](https://pj-fm-rsc.netlify.app/)  
 **📁 Repo:** [`results-summary-component`]([url](https://github.com/pavel-jiranek-tech/frontend-mentor-basic/tree/main/results-summary-component))  
 **📝 Summary:**  
-Lorem ipsum...  
+A responsive results summary card built with semantic HTML and modular SCSS.  
+This challenge focused on matching the provided Figma design across mobile and desktop, applying clean BEM-based structure, flexible spacing system, and accessible implementation using `main`, `section`, `h1`, `h2`, `p`, and decorative `img` with proper `alt` or `aria-hidden` attributes.  
 
 **🔧 Tech stack:** 
 
 Technologies  
 ![HTML5](https://img.shields.io/badge/HTML5-%23E34F26.svg?&logo=html5&logoColor=white)
 ![SCSS](https://img.shields.io/badge/SCSS-%23CD6799.svg?&logo=sass&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-%23F7DF1E.svg?&logo=javascript&logoColor=black)
-![Vue.js](https://img.shields.io/badge/Vue.js-%2335495e.svg?&logo=vue.js&logoColor=%234FC08D)
-![Nuxt.js](https://img.shields.io/badge/Nuxt.js-00C58E?logo=nuxt&logoColor=white)
-
-Methodologies  
 ![BEM](https://img.shields.io/badge/BEM-blue)
 ![Responsive](https://img.shields.io/badge/Responsive_Design-2196f3)
 ![a11y](https://img.shields.io/badge/Accessibility_AA-5cb85c)
 ![No Framework](https://img.shields.io/badge/No_Framework-lightgrey)
-
-Tools  
 ![Figma](https://img.shields.io/badge/Figma_Design-FF7262?logo=figma&logoColor=white)
-
-Deployment  
 ![Netlify](https://img.shields.io/badge/Netlify-00C7B7?logo=netlify&logoColor=white)
-![Vercel](https://img.shields.io/badge/Vercel-444444?logo=vercel&logoColor=white)
 
 ---
 
@@ -147,7 +133,7 @@ Make sure that `index.html` links to the CSS file in `./dist/style.css`.
 
 ## 🧠 Project goals
 
-- Revisiting and practice a clean HTML + SCSS + BEM approach
+- Revisiting and practice a clean HTML + SCSS + [BEM](https://en.bem.info/methodology/) approach
 - Keep **each project independent**, but with centralized build
 - Create clean and easily deployable outputs
 - Automate folder creation and compilation with Node.js

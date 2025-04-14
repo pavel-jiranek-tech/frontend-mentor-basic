@@ -1,6 +1,6 @@
 # Frontend Mentor – [Results Summary Component]
 
-![In progress](https://img.shields.io/badge/status-🟡%20in%20progress-yellow)
+![Deployed](https://img.shields.io/badge/status-🚀%20deployed-brightgreen)
 
 <details>
   <summary>Other status options</summary>
@@ -22,17 +22,18 @@ This is my solution for the [Results Summary Component](https://www.frontendment
 
 ## 🔗 Live demo
 
-👉 [View deployed version](https://my-demo.netlify.app)
+👉 [View deployed version](https://pj-fm-rsc.netlify.app)
 
 ---
 
-## 🛠 Technologies used
+## 🛠 Technologies Used
 
-- HTML5 + BEM naming convention
-- SCSS with `@use` and modular structure
-- Flexbox + aspect-ratio for layout and scaling
-- Decorative elements with `::before` / `::after`
-- Manual SCSS build (no framework)
+- **HTML5** with [BEM](https://en.bem.info/methodology/) naming convention
+- **SCSS** using `@use`, modular file structure and partials
+- **CSS Flexbox** for responsive layout and alignment
+- **Manual SCSS build** without any CSS framework
+- **Custom utility mixins** and spacing/typography variables
+- **Decorative icons** handled semantically with `alt` and `aria-hidden`
 
 ---
 
@@ -41,29 +42,27 @@ This is my solution for the [Results Summary Component](https://www.frontendment
 - **`assets/`** - static files, e.g. images or favicons
 - **`assets/images/`** - images used in the component (QR code)
 - **`scss/`** - modules with global styles, variables, mixins
-- **`index.html`** - HTML structure of the component with BEM classes
+- **`index.html`** - HTML structure of the component with [BEM](https://en.bem.info/methodology/) classes
 - **`main.js`** - entry point for loading styles (via SCSS)
 - **`dist/`** - folder for built output (ignored in Git)
 
 ---
 
-## ✨ What I focused on
+## ✨ What I Focused On
 
-- A deliberately minimalist project where I focused on a consistent HTML and SCSS structure
-- Using a modern SCSS approach with `@use`, variables and component modularity
-- Maintaining visual fidelity of the design in Figma, including subtle shadows and backgrounds with decorative circles
-- Working with `aspect-ratio` to maintain proper QR box ratio across devices
-- Consistent use of BEM naming and clean layout without relying on JS or CSS frameworks
+- A deliberately minimalist solution with clean and consistent HTML and SCSS structure
+- Applying a modern SCSS architecture using `@use`, variables, and modular components
+- Faithfully implementing the visual design from Figma, including gradient backgrounds and soft shadows
+- Consistent use of [BEM](https://en.bem.info/methodology/) naming convention and mobile-first approach
 
 ---
 
-## 🧠 Key implementation notes
+## 🧠 Key Implementation Notes
 
-- The design for desktop and mobile used an identical component - I decided not to use media queries because they were not needed
-- Box-shadow and spacings were exactly replicated according to Figma specifications, including opacity conversion (e.g. `4.77%` to `rgba`)
-- Decorative circles in the background were implemented via pseudo-elements with absolute positioning
-- The font "Outfit" was loaded via Google Fonts and plugged in as a SCSS variable for possible scalability in other components
-- Paying attention to accessibility through semantic HTML (e.g., `h1`, `p`, `img` with `alt`) and proper document language declaration
+- Mobile-first layout with a responsive desktop version handled via a single breakpoint (`768px`)
+- All spacings, border radii and box-shadows were matched precisely to the Figma design, including alpha values in `hsla()` where applicable
+- Google Font "Hanken Grotesk" was loaded via `<link>` and mapped to SCSS variables with weight variants (500, 700, 800)
+- Layouts were implemented using semantic HTML elements (`main`, `section`, `h1`, `h2`, `p`, `img`) and accessible `alt`/`aria-hidden` for icons
 
 ---
 

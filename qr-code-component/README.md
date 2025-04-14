@@ -30,7 +30,7 @@ The goal was to create a simple, centered QR code card component that closely ma
 
 ## 🛠 Technologies used
 
-- HTML5 + BEM naming convention
+- HTML5 + [BEM](https://en.bem.info/methodology/) naming convention
 - SCSS with `@use` and modular structure
 - Flexbox + aspect-ratio for layout and scaling
 - Decorative elements with `::before` / `::after`
@@ -43,7 +43,7 @@ The goal was to create a simple, centered QR code card component that closely ma
 - **`assets/`** - static files, e.g. images or favicons
 - **`assets/images/`** - images used in the component (QR code)
 - **`scss/`** - modules with global styles, variables, mixins
-- **`index.html`** - HTML structure of the component with BEM classes
+- **`index.html`** - HTML structure of the component with [BEM](https://en.bem.info/methodology/) classes
 - **`main.js`** - entry point for loading styles (via SCSS)
 - **`dist/`** - folder for built output (ignored in Git)
 
@@ -55,7 +55,7 @@ The goal was to create a simple, centered QR code card component that closely ma
 - Using a modern SCSS approach with `@use`, variables and component modularity
 - Maintaining visual fidelity of the design in Figma, including subtle shadows and backgrounds with decorative circles
 - Working with `aspect-ratio` to maintain proper QR box ratio across devices
-- Consistent use of BEM naming and clean layout without relying on JS or CSS frameworks
+- Consistent use of [BEM](https://en.bem.info/methodology/) naming and clean layout without relying on JS or CSS frameworks
 
 ---
 

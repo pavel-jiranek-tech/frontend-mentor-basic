@@ -28,7 +28,7 @@ This is my solution for the [Product Preview Card Component](https://www.fronten
 
 ## 🛠 Technologies used
 
-- HTML5 + BEM naming convention  
+- HTML5 + [BEM](https://en.bem.info/methodology/) naming convention  
 - SCSS with `@use`, `@forward`, and modular architecture (`variables/`, `mixins/`)  
 - Flexbox layout (mobile-first) with media queries and spacing via SCSS variables  
 - Responsive images using `<picture>` with device-specific sources  
@@ -42,7 +42,7 @@ This is my solution for the [Product Preview Card Component](https://www.fronten
 - **`assets/`** - static files, e.g. images or favicons
 - **`assets/images/`** - images used in the component (QR code)
 - **`scss/`** - modules with global styles, variables, mixins
-- **`index.html`** - HTML structure of the component with BEM classes
+- **`index.html`** - HTML structure of the component with [BEM](https://en.bem.info/methodology/) classes
 - **`main.js`** - entry point for loading styles (via SCSS)
 - **`dist/`** - folder for built output (ignored in Git)
 
@@ -55,7 +55,7 @@ This is my solution for the [Product Preview Card Component](https://www.fronten
 - Pixel-perfect match to the Figma design, including precise spacing, typography, and visual hierarchy  
 - Responsive behavior using `<picture>` and `object-fit` to match image scaling across devices  
 - Semantic markup with accessible elements (e.g. proper alt text, keyboard-friendly buttons)  
-- Fully mobile-first layout with BEM naming and no JS or external frameworks  
+- Fully mobile-first layout with [BEM](https://en.bem.info/methodology/) naming and no JS or external frameworks  
 
 ---
 
