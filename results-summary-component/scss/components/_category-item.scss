@@ -23,6 +23,11 @@
   }
 
   &__score {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 72px;
+
     @include m.text-body-bold;
     color: m.hsla-from-hsl(v.$dark-navy, 0.5);
 
@@ -55,5 +60,10 @@
 @media (min-width: v.$breakpoint-tablet) {
   .category-item {
     padding: 17px 16px 16px 16px;
+    @include m.text-body-desktop;
+
+    &__score {
+      @include m.text-body-bold-desktop;
+    }
   }
 }

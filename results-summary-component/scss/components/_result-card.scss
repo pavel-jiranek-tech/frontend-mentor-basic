@@ -117,7 +117,7 @@
       align-items: center;
       flex: 0 0 368px;
       padding-top: 38px;
-      padding-bottom: 46px;
+      padding-bottom: 55px;
 
       border-radius: 32px;
 
@@ -140,6 +140,7 @@
     &__circle {
       width: 200px;
       height: 200px;
+      margin-bottom: 28px;
 
       &-value {
         @include m.text-heading-xl-desktop;
