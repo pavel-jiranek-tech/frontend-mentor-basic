@@ -1,0 +1,17 @@
+@use './base/variables/index' as v;
+@use './base/mixins/index' as m;
+
+/* RESET */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  //background-color: v.$light-gray;
+  //color: v.$dark-blue;
+  //@include m.flex-center;
+  min-height: 100vh;
+}
