@@ -163,5 +163,9 @@
     &__categories {
       margin-bottom: 41px;
     }
+
+    &__btn {
+      @include m.text-body-bold-desktop;
+    }
   }
 }
