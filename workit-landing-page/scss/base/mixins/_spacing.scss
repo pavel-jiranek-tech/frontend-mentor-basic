@@ -38,7 +38,9 @@
 }
 
 @mixin hero-image-margin-top {
-  margin-top: -80px;
+  & {
+    margin-top: -80px;
+  }
 
   @media (min-width: break.$breakpoint-tablet) {
     margin-top: -104px;
@@ -46,5 +48,17 @@
 
   @media (min-width: break.$breakpoint-desktop) {
     margin-top: -210px;
+  }
+}
+
+@mixin features-padding {
+  padding: spac.$spacing-800 spac.$spacing-250;
+
+  @media (min-width: break.$breakpoint-tablet) {
+    padding: spac.$spacing-700 spac.$spacing-550 spac.$spacing-550 spac.$spacing-550;
+  }
+
+  @media (min-width: break.$breakpoint-desktop) {
+    padding: spac.$spacing-1000 spac.$spacing-1000 spac.$spacing-1800 spac.$spacing-1000;
   }
 }
