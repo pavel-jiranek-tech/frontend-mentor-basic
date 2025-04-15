@@ -2,6 +2,9 @@
 @use '../base/mixins/index' as m;
 
 .features {
+  position: relative;
+  background-color: v.$slate-100;
+
   &__inner {
     display: flex;
     flex-direction: column;
@@ -66,10 +69,17 @@
   }
 
   &__ornament {
+    position: absolute;
     bottom: 0;
     left: 0;
-
     width: 100%;
+    pointer-events: none;
+
+    &-wrapper {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 1440 / 72;
+    }
   }
 }
 
@@ -88,6 +98,10 @@
         text-align: left;
         gap: v.$spacing-350;
       }
+    }
+
+    &__ornament-wrapper {
+      aspect-ratio: 768 / 72;
     }
   }
 }
@@ -111,6 +125,10 @@
         align-items: center;
         text-align: center;
       }
+    }
+
+    &__ornament-wrapper {
+      aspect-ratio: 375 / 24;
     }
   }
 }
