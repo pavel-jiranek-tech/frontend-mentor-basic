@@ -4,7 +4,7 @@
 @use './components/hero' as *;
 @use './components/button' as *;
 @use './components/features' as *;
-@use './components/founder' as *;
+@use './components/cta' as *;
 
 /* RESET */
 *,
@@ -18,8 +18,4 @@
 body {
   min-height: 100vh;
   background-color: v.$slate-100;
-}
-
-.founder__image {
-  width: 280px;
 }
