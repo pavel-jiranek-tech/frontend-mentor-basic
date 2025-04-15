@@ -1,17 +1,23 @@
 @use './base/variables/index' as v;
 @use './base/mixins/index' as m;
+@use './components/header' as *;
+@use './components/hero' as *;
+@use './components/button' as *;
 
 /* RESET */
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 body {
-  font-family: 'Outfit', sans-serif;
-  //background-color: v.$light-gray;
-  //color: v.$dark-blue;
-  //@include m.flex-center;
   min-height: 100vh;
+  background-color: v.$slate-100;
+}
+
+.founder__image {
+  width: 280px;
 }

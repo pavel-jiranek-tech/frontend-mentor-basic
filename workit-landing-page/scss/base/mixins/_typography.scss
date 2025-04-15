@@ -79,15 +79,22 @@
 
 // ATTENTION!
 @mixin text-preset-5 {
+  font-family: typo.$font-manrope;
+  font-weight: typo.$font-weight-bold;
+  font-size: 18px;
+  line-height: 180%;
+  letter-spacing: 0px;
+}
+
+@mixin button-preset-1 {
+  font-family: typo.$font-manrope;
+  font-weight: typo.$font-weight-bold;
+  font-size: 16px;
+  line-height: 180%;
+  letter-spacing: 0px;
+  text-decoration: none;
 
   @media (min-width: break.$breakpoint-tablet) {
-  }
-
-  @media (min-width: break.$breakpoint-desktop) {
-    font-family: typo.$font-manrope;
-    font-weight: typo.$font-weight-bold;
     font-size: 18px;
-    line-height: 180%;
-    letter-spacing: 0px;
   }
 }
