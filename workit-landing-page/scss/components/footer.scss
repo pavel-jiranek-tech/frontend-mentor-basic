@@ -1,0 +1,55 @@
+@use '../base/variables/index' as v;
+@use '../base/mixins/index' as m;
+
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: v.$white;
+  @include m.footer-padding;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: v.$spacing-700;
+  }
+
+  &__logo {
+    display: block;
+  }
+
+  &__socials {
+    display: flex;
+    gap: v.$spacing-350;
+    padding: 0;
+    margin: 0;
+
+    &-item {
+      list-style: none;
+      width: 20px;
+      height: 20px;
+    }
+
+    &-link {
+      color: v.$slate-500;
+      transition: color 0.3s;
+    
+      &:hover {
+        color: v.$slate-900;
+      }
+    }
+    
+    &-link {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+    }
+  }
+}

@@ -4,7 +4,7 @@
 .button {
   background-color: v.$green;
   color: v.$slate-900;
-  padding: 12px 32px;
+  padding: v.$spacing-150 v.$spacing-400;
 
   @include m.button-preset-1;
 

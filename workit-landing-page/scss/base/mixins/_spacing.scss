@@ -62,3 +62,11 @@
     padding: spac.$spacing-1000 spac.$spacing-1000 spac.$spacing-1800 spac.$spacing-1000;
   }
 }
+
+@mixin footer-padding {
+  padding: spac.$spacing-1000;
+
+  @media (min-width: break.$breakpoint-desktop) {
+    padding: spac.$spacing-1400 spac.$spacing-1000;
+  }
+}
