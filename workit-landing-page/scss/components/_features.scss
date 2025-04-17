@@ -78,7 +78,7 @@
     &-wrapper {
       position: relative;
       width: 100%;
-      aspect-ratio: 1440 / 72;
+      aspect-ratio: 375 / 24;
     }
   }
 }
@@ -130,7 +130,7 @@
     }
 
     &__ornament-wrapper {
-      aspect-ratio: 375 / 24;
+      aspect-ratio: 1440 / 72;
     }
   }
 }
