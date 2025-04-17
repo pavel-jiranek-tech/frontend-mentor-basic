@@ -26,28 +26,28 @@
 }
 
 @mixin hero-image-width {
-  width: 320px;
+  width: 20rem;
 
   @media (min-width: break.$breakpoint-tablet) {
-    width: 515px;
+    width: 32.1875rem; //515px
   }
 
   @media (min-width: break.$breakpoint-desktop) {
-    width: 767px;
+    width: 47.9375rem; //767px
   }
 }
 
 @mixin hero-image-margin-top {
   & {
-    margin-top: -80px;
+    margin-top: -5rem; //-80px
   }
 
   @media (min-width: break.$breakpoint-tablet) {
-    margin-top: -104px;
+    margin-top: -6.5rem; //-104px
   }
 
   @media (min-width: break.$breakpoint-desktop) {
-    margin-top: -210px;
+    margin-top: -13.125rem; //-210px
   }
 }
 
