@@ -1,6 +1,6 @@
 # Frontend Mentor – [Challenge Name]
 
-![In progress](https://img.shields.io/badge/status-🟡%20in%20progress-yellow)
+![Deployed](https://img.shields.io/badge/status-🚀%20deployed-brightgreen)
 
 <details>
   <summary>Other status options</summary>

@@ -2,57 +2,96 @@
 @use '../variables/breakpoints' as break;
 
 @mixin text-heading-xl {
-  font-family: typo.$font-hanken-grotesk;
-  font-weight: typo.$font-weight-extra-bold;
-  font-size: 56px;
-  line-height: 72px;
-  letter-spacing: 0px;
-
-  @media (min-width: break.$breakpoint-tablet) {
-    font-size: 72px;
-  }
+  @include text-style(
+    typo.$font-hanken-grotesk,
+    typo.$font-weight-extra-bold,
+    56px,
+    72px,
+    null,
+    72px,
+    0px
+  );
 }
 
 @mixin text-heading-l {
-  font-family: typo.$font-hanken-grotesk;
-  font-weight: typo.$font-weight-bold;
-  font-size: 24px;
-  letter-spacing: 0px;
-
-  @media (min-width: break.$breakpoint-tablet) {
-    font-size: 32px;
-  }
+  @include text-style(
+    typo.$font-hanken-grotesk,
+    typo.$font-weight-bold,
+    24px,
+    32px,
+    null,
+    null,
+    0px
+  );
 }
 
 @mixin text-heading-m {
-  font-family: typo.$font-hanken-grotesk;
-  font-weight: typo.$font-weight-bold;
-  font-size: 18px;
-  letter-spacing: 0px;
-
-  @media (min-width: break.$breakpoint-tablet) {
-    font-size: 24px;
-  }
+  @include text-style(
+    typo.$font-hanken-grotesk,
+    typo.$font-weight-bold,
+    18px,
+    24px,
+    null,
+    null,
+    0px
+  );
 }
 
 @mixin text-body-bold {
-  font-family: typo.$font-hanken-grotesk;
-  font-weight: typo.$font-weight-bold;
-  font-size: 16px;
-  letter-spacing: 0px;
-
-  @media (min-width: break.$breakpoint-tablet) {
-    font-size: 18px;
-  }
+  @include text-style(
+    typo.$font-hanken-grotesk,
+    typo.$font-weight-bold,
+    16px,
+    18px,
+    null,
+    null,
+    0px
+  );
 }
 
 @mixin text-body {
-  font-family: typo.$font-hanken-grotesk;
-  font-weight: typo.$font-weight-medium;
-  font-size: 16px;
-  letter-spacing: 0px;
+  @include text-style(
+    typo.$font-hanken-grotesk,
+    typo.$font-weight-medium,
+    16px,
+    18px,
+    null,
+    null,
+    0px
+  );
+}
 
-  @media (min-width: break.$breakpoint-tablet) {
-    font-size: 18px;
+
+@mixin text-style(
+  $family,
+  $weight,
+  $size-mobile,
+  $size-tablet: null,
+  $size-desktop: null,
+  $line-height: null,
+  $letter-spacing: null
+) {
+  font-family: $family;
+  font-weight: $weight;
+  font-size: $size-mobile;
+
+  @if $line-height != null {
+    line-height: $line-height;
+  }
+
+  @if $letter-spacing != null {
+    letter-spacing: $letter-spacing;
+  }
+
+  @if $size-tablet != null {
+    @media (min-width: break.$breakpoint-tablet) {
+      font-size: $size-tablet;
+    }
+  }
+
+  @if $size-desktop != null {
+    @media (min-width: break.$breakpoint-desktop) {
+      font-size: $size-desktop;
+    }
   }
 }
