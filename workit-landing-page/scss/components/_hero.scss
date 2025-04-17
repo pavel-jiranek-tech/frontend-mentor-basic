@@ -12,7 +12,6 @@
     background-color: v.$slate-900;
     color: v.$white;
     position: relative;
-    overflow: hidden;
   }
 
   &__wrapper {
@@ -115,6 +114,10 @@
   .hero {
     &__title {
       max-width: 635px;
+
+      &--highlight {
+        text-underline-offset: 10px;
+      }
     }
 
     &__bg-pattern {
