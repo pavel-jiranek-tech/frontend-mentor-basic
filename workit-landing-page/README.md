@@ -28,11 +28,12 @@ This is my solution for the [Workit Landing Page](https://www.frontendmentor.io/
 
 ## 🛠 Technologies used
 
-- HTML5 + BEM naming convention
-- SCSS with `@use` and modular structure
-- Flexbox + aspect-ratio for layout and scaling
-- Decorative elements with `::before` / `::after`
-- Manual SCSS build (no framework)
+- **HTML5** with [BEM](https://en.bem.info/methodology/) naming convention
+- **SCSS** using `@use`, modular file structure and partials
+- **CSS Flexbox** for responsive layout and alignment
+- **Manual SCSS build** without any CSS framework
+- **Custom utility mixins** and spacing/typography variables
+- **Decorative icons** handled semantically with `alt` and `aria-hidden`
 
 ---
 
@@ -49,21 +50,23 @@ This is my solution for the [Workit Landing Page](https://www.frontendmentor.io/
 
 ## ✨ What I focused on
 
-- A deliberately minimalist project where I focused on a consistent HTML and SCSS structure
-- Using a modern SCSS approach with `@use`, variables and component modularity
-- Maintaining visual fidelity of the design in Figma, including subtle shadows and backgrounds with decorative circles
-- Working with `aspect-ratio` to maintain proper QR box ratio across devices
-- Consistent use of BEM naming and clean layout without relying on JS or CSS frameworks
+- Building a clean and scalable HTML structure using semantic elements and [BEM](https://en.bem.info/methodology/) naming convention  
+- Using a modern SCSS setup with `@use`, design tokens, partials, and responsive typography  
+- Preserving visual fidelity with the Figma design, including typography, spacing, and decorative SVG elements  
+- Implementing mobile-first responsive layouts with Flexbox and media queries  
+- Avoiding frameworks to maintain full control over layout, interactivity, and accessibility  
+- Ensuring accessibility with proper use of `alt`, `aria-label`, and decorative image handling (`aria-hidden`)
 
 ---
 
-## 🧠 Key implementation notes
+## 🧠 Key Implementation Notes
 
-- The design for desktop and mobile used an identical component - I decided not to use media queries because they were not needed
-- Box-shadow and spacings were exactly replicated according to Figma specifications, including opacity conversion (e.g. `4.77%` to `rgba`)
-- Decorative circles in the background were implemented via pseudo-elements with absolute positioning
-- The font "Outfit" was loaded via Google Fonts and plugged in as a SCSS variable for possible scalability in other components
-- Paying attention to accessibility through semantic HTML (e.g., `h1`, `p`, `img` with `alt`) and proper document language declaration
+- The layout was implemented mobile-first, using media queries for tablet (`768px`) and desktop (`1120px`) breakpoints  
+- Font sizes were defined via SCSS variables in `rem`, based on Figma values, and structured with responsive text presets  
+- Decorative SVGs and background patterns were handled using `<picture>` for responsiveness and `aria-hidden` for accessibility  
+- Flexbox was used throughout to align content and manage layout flow across viewports  
+- The fonts "Fraunces" and "Manrope" were loaded from Google Fonts and integrated via SCSS variables  
+- Accessibility best practices were followed, including semantic elements, image `alt` texts, and `aria-label` for non-text links (e.g. social icons)
 
 ---
 
