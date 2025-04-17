@@ -31,7 +31,7 @@
     text-decoration-line: underline;
     text-decoration-color: v.$green;
     text-decoration-thickness: 3px;
-    text-underline-offset: 8px;
+    text-underline-offset: v.$spacing-100;
 
     &:hover {
       color: v.$green;

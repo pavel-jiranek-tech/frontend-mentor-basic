@@ -27,8 +27,8 @@
 
     &-item {
       list-style: none;
-      width: 20px;
-      height: 20px;
+      width: v.$spacing-250;
+      height: v.$spacing-250;
     }
 
     &-link {
@@ -42,8 +42,8 @@
     
     &-link {
       display: inline-block;
-      width: 20px;
-      height: 20px;
+      width: v.$spacing-250;
+      height: v.$spacing-250;
 
       img {
         width: 100%;
