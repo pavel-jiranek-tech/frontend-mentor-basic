@@ -2,8 +2,6 @@
 @use '../base/mixins/index' as m;
 
 .features {
-  //position: relative;
-  //overflow-x: clip;
   background-color: v.$slate-100;
 
   &__inner {
@@ -11,7 +9,6 @@
     flex-direction: column;
     align-items: center;
     position: relative;
-    //overflow-x: clip;
 
     color: v.$slate-900;
 
