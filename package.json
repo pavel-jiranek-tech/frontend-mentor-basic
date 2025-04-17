@@ -13,7 +13,10 @@
     "preview:ppc": "PROJECT=product-preview-card-component vite preview",
     "dev:rsc": "PROJECT=results-summary-component vite",
     "build:rsc": "PROJECT=results-summary-component vite build",
-    "preview:rsc": "PROJECT=results-summary-component vite preview"
+    "preview:rsc": "PROJECT=results-summary-component vite preview",
+    "dev:wlp": "PROJECT=workit-landing-page vite",
+    "build:wlp": "PROJECT=workit-landing-page vite build",
+    "preview:wlp": "PROJECT=workit-landing-page vite preview"
   },
   "repository": {
     "type": "git",

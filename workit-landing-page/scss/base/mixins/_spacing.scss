@@ -1,0 +1,72 @@
+@use '../variables/spacing' as spac;
+@use '../variables/breakpoints' as break;
+
+@mixin header-padding {
+  padding: spac.$spacing-400 spac.$spacing-250 0 spac.$spacing-250;
+
+  @media (min-width: break.$breakpoint-tablet) {
+    padding: spac.$spacing-400 spac.$spacing-550 0 spac.$spacing-550;
+  }
+
+  @media (min-width: break.$breakpoint-desktop) {
+    padding: spac.$spacing-700 spac.$spacing-1000 0 spac.$spacing-1000;
+  }
+}
+
+@mixin hero-image-padding {
+  padding: 0 spac.$spacing-250;
+
+  @media (min-width: break.$breakpoint-tablet) {
+    padding: 0 spac.$spacing-550;
+  }
+
+  @media (min-width: break.$breakpoint-desktop) {
+    padding: 0;
+  }
+}
+
+@mixin hero-image-width {
+  width: 20rem;
+
+  @media (min-width: break.$breakpoint-tablet) {
+    width: 32.1875rem; //515px
+  }
+
+  @media (min-width: break.$breakpoint-desktop) {
+    width: 47.9375rem; //767px
+  }
+}
+
+@mixin hero-image-margin-top {
+  & {
+    margin-top: -5rem; //-80px
+  }
+
+  @media (min-width: break.$breakpoint-tablet) {
+    margin-top: -6.5rem; //-104px
+  }
+
+  @media (min-width: break.$breakpoint-desktop) {
+    margin-top: -13.125rem; //-210px
+  }
+}
+
+@mixin features-padding {
+  padding: spac.$spacing-800 spac.$spacing-250;
+
+  @media (min-width: break.$breakpoint-tablet) {
+    padding: spac.$spacing-700 spac.$spacing-550 spac.$spacing-550 spac.$spacing-550;
+  }
+
+  @media (min-width: break.$breakpoint-desktop) {
+    padding: spac.$spacing-1000 spac.$spacing-1000 spac.$spacing-1800 spac.$spacing-1000;
+  }
+}
+
+@mixin footer-padding {
+  padding: spac.$spacing-1000;
+
+  @media (min-width: break.$breakpoint-desktop) {
+    padding: spac.$spacing-1400 spac.$spacing-1000;
+  }
+}

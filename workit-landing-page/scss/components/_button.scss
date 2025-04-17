@@ -1,0 +1,17 @@
+@use '../base/variables/index' as v;
+@use '../base/mixins/index' as m;
+
+.button {
+  background-color: v.$green;
+  color: v.$slate-900;
+  padding: v.$spacing-150 v.$spacing-400;
+
+  @include m.button-preset-1;
+
+  &:hover {
+    background-color: v.$slate-900;
+    color: v.$green;
+    outline: 2px solid v.$green;
+    outline-offset: -1px;
+  }
+}
