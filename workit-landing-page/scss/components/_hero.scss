@@ -69,6 +69,7 @@
   &__title {
     color: v.$white;
     z-index: 1;
+    max-width: 300px;
 
     @include m.text-preset-1;
 
@@ -87,6 +88,10 @@
 
 @media (min-width: v.$breakpoint-tablet) {
   .hero {
+    &__title {
+      max-width: 370px;
+    }
+
     &__bg-pattern {
       display: inline;
       position: absolute;
@@ -108,6 +113,10 @@
 }
 @media (min-width: v.$breakpoint-desktop) {
   .hero {
+    &__title {
+      max-width: 635px;
+    }
+
     &__bg-pattern {
       &--left {
         top: 8.125rem; //130px
