@@ -87,6 +87,9 @@
 
 @media (min-width: v.$breakpoint-tablet) {
   .hero {
+    overflow-x: hidden;
+    position: relative;
+
     &__title {
       max-width: 370px;
     }
@@ -103,8 +106,7 @@
       &--right {
         top: 11.25rem; //180px
         right: -8%;
-        right: 0;
-        transform: translateX(50%);
+        transform: none;
         pointer-events: none;
       }
     }
@@ -112,6 +114,7 @@
 }
 @media (min-width: v.$breakpoint-desktop) {
   .hero {
+
     &__title {
       max-width: 635px;
 
@@ -128,8 +131,8 @@
 
       &--right {
         top: 19.375rem; //310px
-        right: 0;
-        transform: translateX(50%);
+        right: -7%;
+        transform: none;
         pointer-events: none;
       }
     }
