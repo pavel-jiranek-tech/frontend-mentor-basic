@@ -12,8 +12,8 @@ The repository serves as a **practice space**, but also as a **modular portfolio
 ### [4] Workit Landing Page
 ![Deployed](https://img.shields.io/badge/status-🚀%20deployed-brightgreen)   
 
-**🔗 Live:** [Demo Link](https://pj-fm-wlp.netlify.app/)  
-**📁 Repo:** [`workit-landing-page`]([url](https://github.com/pavel-jiranek-tech/frontend-mentor-basic/tree/main/workit-landing-page))  
+**🔗 Live:** [pj-fm-wlp.netlify.app](https://pj-fm-wlp.netlify.app/)  
+**📁 Repo:** [`workit-landing-page`](https://github.com/pavel-jiranek-tech/frontend-mentor-basic/tree/main/workit-landing-page)  
 **📝 Summary:**  
 A fully responsive landing page built with semantic HTML and modular SCSS.  
 This challenge focused on replicating the provided Figma design across mobile, tablet, and desktop breakpoints while maintaining a clean BEM-based structure, consistent spacing and typography, and an accessible implementation using semantic tags (`header`, `main`, `section`, `h1–h2`, `p`, `img`) with appropriate `alt`, `aria-label`, and `aria-hidden` attributes.
@@ -37,7 +37,7 @@ This challenge focused on replicating the provided Figma design across mobile, t
 ![Deployed](https://img.shields.io/badge/status-🚀%20deployed-brightgreen)  
 
 **🔗 Live:** [pj-fm-ppc.netlify.app](https://pj-fm-rsc.netlify.app/)  
-**📁 Repo:** [`results-summary-component`]([url](https://github.com/pavel-jiranek-tech/frontend-mentor-basic/tree/main/results-summary-component))  
+**📁 Repo:** [`results-summary-component`](https://github.com/pavel-jiranek-tech/frontend-mentor-basic/tree/main/results-summary-component)  
 **📝 Summary:**  
 A responsive results summary card built with semantic HTML and modular SCSS.  
 This challenge focused on matching the provided Figma design across mobile and desktop, applying clean BEM-based structure, flexible spacing system, and accessible implementation using `main`, `section`, `h1`, `h2`, `p`, and decorative `img` with proper `alt` or `aria-hidden` attributes.  
