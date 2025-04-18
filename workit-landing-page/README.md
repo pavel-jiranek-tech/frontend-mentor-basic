@@ -1,4 +1,4 @@
-# Frontend Mentor – [Challenge Name]
+# Frontend Mentor – [Workit Landing Page]
 
 ![Deployed](https://img.shields.io/badge/status-🚀%20deployed-brightgreen)
 
